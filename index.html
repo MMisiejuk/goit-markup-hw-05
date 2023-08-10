@@ -31,7 +31,9 @@
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item">
-              <a class="nav-link current" href="">Studio</a>
+              <div class="underscore">
+                <a class="nav-link current" href="">Studio</a>
+              </div>
             </li>
             <li class="header-item">
               <a class="nav-link" href="./portfolio.html">Portfolio</a>
@@ -60,7 +62,18 @@
       <section class="section your-business">
         <div class="container">
           <h1 class="hero">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
+          <div class="modal is-hidden" data-modal>
+                    <div class="box">
+                        <button class="close-btn" type="button" data-modal-close>
+                            <svg class="vector" width="8px" height="8px" viewBox="0 0 100 100">
+                                <use href="./images/svg/icons.svg#icon-close"></use>
+                            </svg>
+                    </div>
+                    </button>
+                </div>
         </div>
       </section>
       <section class="section text-section">
@@ -86,8 +99,8 @@
               </div>
               <h3 class="title">Punctuality</h3>
               <p class="main-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
               </p>
             </li>
             <li>
@@ -98,8 +111,8 @@
               </div>
               <h3 class="title">Diligence</h3>
               <p class="main-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
               </p>
             </li>
             <li>
@@ -110,8 +123,8 @@
               </div>
               <h3 class="title">Technologies</h3>
               <p class="main-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
               </p>
             </li>
           </ul>
@@ -423,5 +436,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
