@@ -202,7 +202,7 @@ section {
     bottom: 0;
     top: 0;
     position: fixed;
-    background-color: hsla(0, 0%, 0%, .2);
+    background-color: rgba(46, 47, 66, 0.40);
     z-index: 2;
     transition: opacity 0.6s ease, visibility 0.9s ease;
 }
@@ -214,9 +214,9 @@ section {
 }
 
 .box {
-box-sizing: border-box;
-    width: 528px;
-    min-height: 581px;
+    box-sizing: border-box;
+    width: 408px;
+    min-height: 584px;
     background-color: var(--modal-background);
     cursor: initial;
     margin: auto;
@@ -224,8 +224,12 @@ box-sizing: border-box;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    padding-left: 490px;
-    padding-top: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding-left: 360px;
+    padding-top: 24px;
 }
 
 .close-btn {
@@ -238,8 +242,6 @@ box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 8px;
-    right: 8px;
 }
 
 .vector {
