@@ -465,7 +465,7 @@ section {
     justify-content: center;
     align-items: center;
     fill: var(--white-color);
-    transition: fill 250ms var(--transition), background-color 250ms var(--transition)
+    transition: fill 250ms var(--transition), background-color 250ms var(--transition);
 }
 
 .footer-svg:hover,
@@ -574,11 +574,13 @@ section {
 
 .img-border {
     border: 1px solid var(--accent-color);
-    padding: 16px 32px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-right: 16px;
     border-top: none;
     gap: 8px;
     flex-direction: column;
     display: flex;
-    margin: 0;
 }
 
